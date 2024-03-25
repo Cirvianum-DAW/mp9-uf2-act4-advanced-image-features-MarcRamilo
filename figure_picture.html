@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figure Picture</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Exercise 7: Figure Elements</h1>
+    <h3>Using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> Elements</h3>
+    
+    <figure>
+        <img src="/images/ex1.avif" alt="Example Image">
+        <figcaption>This is an example image.</figcaption>
+    </figure>
+
+    <p>The <code>&lt;figure&gt;</code> element is used to encapsulate media, such as images, diagrams, illustrations, etc., along with their captions using the <code>&lt;figcaption&gt;</code> element. It helps to associate the caption with the media content, making it more accessible and understandable to users.</p>
+
+    <h1>Using <code>&lt;picture&gt;</code> Element for Art Direction</h1>
+    
+    <figure>
+        <picture>
+            <!-- Different image sources based on media conditions -->
+            <source srcset="/images/ex1.avif" media="(min-width: 1200px)">
+            <source srcset="/images/ex1_768.png" media="(min-width: 768px)">
+            <source srcset="/images/ex1_767.png" media="(max-width: 750px)">
+            <!-- Default image if no media conditions match -->
+            <img src="/images/ex1.avif" alt="Example Image">
+        </picture>
+        <figcaption>This is an example image with art direction.</figcaption>
+    </figure>
+
+    <p>The <code>&lt;picture&gt;</code> element allows us to provide different image sources based on media conditions. This helps in optimizing images for different screen sizes and resolutions, improving performance and user experience.</p>
+</body>
+</html>

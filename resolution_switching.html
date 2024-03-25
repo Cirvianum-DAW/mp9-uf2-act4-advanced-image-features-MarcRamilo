@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <h1>Exercise 3: Resolution Switching - Modern Img Tags</h1>
+
+
+    <p>Using the <code>&lt;img&gt;</code> element with <code>srcset</code> and <code>sizes</code> attributes:</p>
+
+    <img srcset="/images/ex1.avif 400w,
+    /images/ex1.avif 800w,
+    /images/ex1.avif 1200w" sizes="(max-width: 600px) 400px,
+              (max-width: 1200px) 800px,
+              1200px" src="/images/ex1.avif" alt="An example image with different resolutions">
+
+    Code:
+    <div class="code-container">
+        <pre>
+            &lt;img srcset="/images/ex1.avif 400w,
+            /images/ex1.avif 800w,
+            /images/ex1.avif 1200w" sizes="(max-width: 600px) 400px,
+                      (max-width: 1200px) 800px,
+                      1200px" src="/images/ex1.avif" alt="An example image with different resolutions"&gt;
+        </pre>
+    </div>
+    <p>The <code>srcset</code> attribute provides multiple sources for the browser to choose from, each with
+        different
+        resolutions. The <code>sizes</code> attribute specifies the sizes of the image based on media conditions.
+        This
+        allows the browser to choose the most appropriate image source based on the device's screen width and
+        resolution.</p>
+</body>
+
+</html>

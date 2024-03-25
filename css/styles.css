@@ -20,3 +20,65 @@ img {
   max-height: 100%;
   object-fit: contain;
 }
+
+.code-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+pre {
+  display: inline-block;
+  white-space: pre-wrap;
+  font-family: 'Courier New', Courier, monospace;
+  color: #333;
+  text-align: left;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox-caption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+figure {
+  border: 2px solid #ccc;
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+
+figcaption {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        /* Example styles for working with images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 900px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            position: relative;
+            /* Ensure relative positioning */
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+
+    <h1>Exercise 4: Creating Clickable Images with Image Maps</h1>
+  
+
+
+        <h2>Image Maps</h2>
+        <p>Click on the computer, or the coffe, or the ipad, to go to a new page and read more about the topic:</p>
+
+        <img src="/images/ex4.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+        <map name="workmap">
+            <area shape="rect" coords="150,140,250,240" alt="Computer" href="https://www.apple.com/es/mac/compare/">
+            <area shape="rect" coords="0,250,100,150" alt="Computer" href="https://www.apple.com/es/ipad-pro/">
+
+            <area shape="circle" coords="380,100,40" alt="Cup of coffee" href="https://www.starbucks.es/">
+        </map>
+
+        <h1>Exercise 5: Creating Clickable Images with Image Maps</h1>
+        <p>In the html we have insert the max-height and max-width code:</p>
+        <div class="code-container">
+            <pre>
+                &lt;img src="/images/ex4.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;
+            
+                css: 
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </pre>
+    </div>
+</body>
+
+</html>

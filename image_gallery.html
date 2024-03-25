@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="/node_modules/lightbox2/src/css/lightbox.css" rel="stylesheet" />
+    <script src="/node_modules/lightbox2/src/js/lightbox.js"></script>
+    <script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Exercise 6: Image Gallery with Lightbox</h1>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+        <!-- Single image -->
+        <a href="images/ex1.avif" data-lightbox="image-1" data-title="My caption">
+            <img src="images/ex1.avif" alt="Image 1">
+            <div class="lightbox-caption">My caption</div>
+        </a>
+
+        <!-- Image set -->
+        <a href="images/ex2_webp.webp" data-lightbox="roadtrip">
+            <img src="images/ex2_webp.webp" alt="Image 2">
+        </a>
+        <a href="images/ex4.jpg" data-lightbox="roadtrip">
+            <img src="images/ex4.jpg" alt="Image 3">
+        </a>
+        <a href="images/ex2_avif.avif" data-lightbox="roadtrip">
+            <img src="images/ex2_avif.avif" alt="Image 4">
+        </a>
+    </div>
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        });
+    </script>
+</body>
+
+</html>
