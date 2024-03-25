@@ -6,6 +6,15 @@
     <title>Figure Picture</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+<nav>
+    <ul>
+        <li><a href="basic_image.html">Ex 1 and 2: Basic Image Insertion and Image Formats and Attributes</a></li>
+        <li><a href="resolution_switching.html">Ex 3: Resolution Switching - Modern Img Tags</a></li>
+        <li><a href="image_alignment.html">Ex 4 and 5: Creating Clickable Images with Image Maps and Responsive Images</a></li>
+        <li><a href="image_gallery.html">Ex 6: Image Gallery with Lightbox</a></li>
+        <li><a href="figure_picture.html">Ex 7 and 8: Figure Picture and Art Direction - Picture elements</a></li>
+    </ul>
+</nav>
 <body>
     <h1>Exercise 7: Figure Elements</h1>
     <h3>Using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> Elements</h3>
@@ -16,8 +25,17 @@
     </figure>
 
     <p>The <code>&lt;figure&gt;</code> element is used to encapsulate media, such as images, diagrams, illustrations, etc., along with their captions using the <code>&lt;figcaption&gt;</code> element. It helps to associate the caption with the media content, making it more accessible and understandable to users.</p>
-
-    <h1>Using <code>&lt;picture&gt;</code> Element for Art Direction</h1>
+    <p>Code</p>
+    <div class="code-container">
+        <pre>
+            &lt;figure&gt;
+                &lt;img src="/images/ex1.avif" alt="Example Image"&gt;
+                &lt;figcaption&gt;This is an example image.&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </pre>
+    </div>
+    <h1>Exercise 8: Art Direction - Picture elements</h1>
+    <h2>Using <code>&lt;picture&gt;</code> Element for Art Direction</h2>
     
     <figure>
         <picture>
@@ -32,5 +50,19 @@
     </figure>
 
     <p>The <code>&lt;picture&gt;</code> element allows us to provide different image sources based on media conditions. This helps in optimizing images for different screen sizes and resolutions, improving performance and user experience.</p>
+    <p>Code</p>
+    <div class="code-container">
+        <pre>
+            &lt;figure&gt;
+                &lt;picture&gt;
+                    &lt;source srcset="/images/ex1.avif" media="(min-width: 1200px)"&gt;
+                    &lt;source srcset="/images/ex1_768.png" media="(min-width: 768px)"&gt;
+                    &lt;source srcset="/images/ex1_767.png" media="(max-width: 750px)"&gt;
+                    &lt;img src="/images/ex1.avif" alt="Example Image"&gt;
+                &lt;/picture&gt;
+                &lt;figcaption&gt;This is an example image with art direction.&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </pre>
+    </div>
 </body>
 </html>

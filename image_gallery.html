@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="/node_modules/lightbox2/src/css/lightbox.css" rel="stylesheet" />
     <script src="/node_modules/lightbox2/src/js/lightbox.js"></script>
     <script src="/node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
 
 
 </head>
-
+<nav>
+    <ul>
+        <li><a href="basic_image.html">Ex 1 and 2: Basic Image Insertion and Image Formats and Attributes</a></li>
+        <li><a href="resolution_switching.html">Ex 3: Resolution Switching - Modern Img Tags</a></li>
+        <li><a href="image_alignment.html">Ex 4 and 5: Creating Clickable Images with Image Maps and Responsive Images</a></li>
+        <li><a href="image_gallery.html">Ex 6: Image Gallery with Lightbox</a></li>
+        <li><a href="figure_picture.html">Ex 7 and 8: Figure Picture and Art Direction - Picture elements</a></li>
+    </ul>
+</nav>
 <body>
     <h1>Exercise 6: Image Gallery with Lightbox</h1>
 
@@ -41,6 +49,27 @@
           'wrapAround': true
         });
     </script>
+    <p>Code</p>
+    <div class="code-container">
+        <pre>
+            &lt;div class="gallery"&gt;
+            &lt;a href="images/ex1.avif" data-lightbox="image-1" data-title="My caption"&gt;
+            &lt;img src="images/ex1.avif" alt="Image 1"&gt;
+            &lt;div class="lightbox-caption"&gt;My caption&lt;/div&gt;
+            &lt;/a&gt;
+
+            &lt;a href="images/ex2_webp.webp" data-lightbox="roadtrip"&gt;
+            &lt;img src="images/ex2_webp.webp" alt="Image 2"&gt;
+            &lt;/a&gt;
+            &lt;a href="images/ex4.jpg" data-lightbox="roadtrip"&gt;
+            &lt;img src="images/ex4.jpg" alt="Image 3"&gt;
+            &lt;/a&gt;
+            &lt;a href="images/ex2_avif.avif" data-lightbox="roadtrip"&gt;
+            &lt;img src="images/ex2_avif.avif" alt="Image 4"&gt;
+            &lt;/a&gt;
+            &lt;/div&gt;
+        </pre>
+    </div>
 </body>
 
 </html>
